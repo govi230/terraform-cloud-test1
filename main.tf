@@ -11,8 +11,8 @@ terraform {
 
 
 provider "aws" {
-  profile = "default"
-  region  = "ap-south-1"
+  //profile = "default"
+  region = "ap-south-1"
 }
 
 module "vpc" {
