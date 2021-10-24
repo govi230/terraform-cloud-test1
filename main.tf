@@ -1,3 +1,15 @@
+terraform {
+  backend "remote" {
+    hostname     = "app.terraform.io"
+    organization = "whoami"
+
+    workspaces {
+      name = "test1"
+    }
+  }
+}
+
+
 provider "aws" {
   profile = "default"
   region  = "ap-south-1"
